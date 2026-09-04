@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore, FieldValue } = require('firebase-admin/firestore');
 const axios = require('axios');
@@ -15,7 +16,7 @@ const app = express();
 
 // Set up your INRDeals API credentials
 // In a production environment, keep the token secret using environment variables!
-const INRDEALS_API_TOKEN = 'abh579093449'; 
+const INRDEALS_API_TOKEN = process.env.INRDEALS_API_TOKEN;
 
 // 2. The Sync Endpoint
 // This is the URL path (/sync) that cron-job.org will ping every 4 hours.
