@@ -15,7 +15,7 @@ const app = express();
 
 // Set up your INRDeals API credentials
 // In a production environment, keep the token secret using environment variables!
-const INRDEALS_API_TOKEN = 'YOUR_INRDEALS_API_TOKEN'; 
+const INRDEALS_API_TOKEN = 'abh579093449'; 
 
 // 2. The Sync Endpoint
 // This is the URL path (/sync) that cron-job.org will ping every 4 hours.
